@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="so">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Qaalulo 💖</title>
+
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      color: #333;
+    }
+
+    .card {
+      background: white;
+      border-radius: 25px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+      text-align: center;
+      padding: 40px 30px;
+      width: 320px;
+      transition: transform 0.4s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    }
+
+    h1 {
+      font-size: 2rem;
+      color: #ff5e99;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.1rem;
+      margin-bottom: 20px;
+    }
+
+    button {
+      background: #ff5e99;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background: #ff2d75;
+    }
+
+    .heart {
+      font-size: 40px;
+      color: #ff5e99;
+      animation: pulse 1.2s infinite;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); opacity: 0.8; }
+      50% { transform: scale(1.3); opacity: 1; }
+      100% { transform: scale(1); opacity: 0.8; }
+    }
+
+    footer {
+      position: absolute;
+      bottom: 10px;
+      font-size: 0.9rem;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="card">
+    <div class="heart">💖</div>
+    <h1>Qaalulo</h1>
+    <p>Waa qof qurux badan, daacad ah, oo qalbi wanaagsan 😍</p>
+    <button onclick="showMessage()">Riix fariin 💌</button>
+  </div>
+
+  <footer>Made with 💕 by ChatGPT</footer>
+
+  <script>
+    function showMessage() {
+      const messages = [
+        "Qaalulo waa iftiinka maalinta 💫",
+        "Dareenka Qaalulo waa mid naxariis badan 🌸",
+        "Mar kasta oo aad dhoola cadeyso, adduunku wuu iftiimaa 😍",
+        "Qaalulo, waxaad tahay sababta quruxda maanta 💖"
+      ];
+      const random = Math.floor(Math.random() * messages.length);
+      alert(messages[random]);
+    }
+  </script>
+</body>
+</html>
